@@ -1,0 +1,97 @@
+.navbar{
+    background-color: rgba(0,0,0,0.1);
+    border-color: rgba(0,0,0,0.1);
+}
+.logo{
+    font-size: 24px;
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus{
+    color: #fff;
+}
+.navbar-default .navbar-nav > li > a{
+    font-size: 16px;
+}
+#header{
+    max-width: 100%;
+    width: 100%;
+    min-height: 420px;
+    background: url(../images/header_desktop.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.carousel-text-block{
+    width: 460px;
+    height: 152px;
+    max-width: 460px;
+    max-height: 152px;
+    background: rgba(0,0,0,0.35);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50% ,0);
+    padding: 10px;
+}
+.carousel-text-style-b{
+    width: 90%;
+    margin: 0 auto 16px;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+}
+.carousel-text-style-s{
+    /* display: block; */
+    color: #fff;
+    text-align: center;
+}
+.icon-style{
+    color: #fff;
+}
+
+/*---------------------------
+            內容
+---------------------------*/
+#content{
+    padding: 50px 0 31px;
+    background: #efe9e7;
+}
+.content-title{
+    max-width: 200px;
+    width: 200px;
+    max-height: 64px;
+    margin: 0 auto;
+    position: relative;
+}
+.content-title::after{
+    content:'';
+    position: absolute;
+    right: -60%;
+    top: 52%;
+    width: 105px;
+    height: 1px;
+    background: #979797;
+}
+.content-title::before{
+    content:'';
+    position: absolute;
+    left: -60%;
+    top: 52%;
+    width: 105px;
+    height: 1px;
+    background: #979797;
+}
+.content-title p{
+    text-align: center;
+    font-size: 20px;
+    color: #3D1101;
+    line-height: 32px;
+}
+
+@media (min-width: 768px){
+    .navbar-nav {
+        float: right;
+        margin: 0;
+    }
+}
