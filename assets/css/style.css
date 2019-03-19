@@ -53,7 +53,7 @@
 /*---------------------------
             內容
 ---------------------------*/
-#content{
+#content-block-top{
     padding: 50px 0 31px;
     background: #efe9e7;
 }
@@ -61,7 +61,7 @@
     max-width: 200px;
     width: 200px;
     max-height: 64px;
-    margin: 0 auto;
+    margin: 0 auto 31px;
     position: relative;
 }
 .content-title::after{
@@ -88,7 +88,202 @@
     color: #3D1101;
     line-height: 32px;
 }
+.thumbnail{
+    background: transparent;
+    border: none;
+}
+.caption{ margin-top: 20px; }
+.caption h3,
+.caption p{
+    color: #3D1101;
+}
+.caption h3{
+    font-size: 18px;
+    margin-bottom: 11px;
+    text-align: center;
+}
+.caption p{
+    width: 73%;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: left;
+}
+#content-block-mid{
+    background: #3d1101;
+}
+#content-block-mid img{
+    width: 100%;
+}
+#content-block-mid .title,
+#content-block-mid .subtitle,
+#content-block-mid .mid-content{
+    color: #EFE9E7;
+    text-align: left;
+}
+#content-block-mid .title{
+    font-size: 20px;
+    line-height: 32px;
+    margin: 81px 0 0;
+}
+#content-block-mid .mid-content,
+#content-block-mid .subtitle{
+    font-size: 16px;
+}
+#content-block-mid .mid-content{
+    width: 70%;
+    margin-top: 16px;
+}
 
+#content-block-btm{
+    background: #efe9e7;
+    padding-bottom: 50px;
+}
+#content-block-btm .title{
+    margin: 50px 0 32px;
+    font-size: 24px;
+    color: #3D1101;
+    text-align: center;
+}
+#content-block-btm .media-body{
+    vertical-align: middle;
+}
+#content-block-btm .block-btm-content,
+#content-block-btm .block-btm-content-name{
+    line-height: 24px;
+    font-size: 16px;
+}   
+#content-block-btm .block-btm-content{
+    width: 60%;
+    margin-left: 21%;
+    color: #3D1101;
+}
+#content-block-btm .block-btm-content-name{
+    text-align: right;
+    width: 57%;
+    margin: 16px auto 0;
+    color: rgba(61,17,0,0.75);
+}
+#content-block-btm .media-heading{
+    font-size: 18px;
+    color: #3D1101;
+}
+#content-block-btm .media{
+    margin-top: 0;
+}
+
+#res-position{
+    padding: 50px 0;
+}
+#res-position .title{
+    text-align: center;
+    font-size: 24px;
+    color: #3D1101;
+    margin: 0 0 38px;
+}
+#res-position img{
+    width: 100%;
+}
+#res-position .input-block{
+    margin-bottom: 17px;
+}
+#res-position .input-block p{
+    font-size: 14px;
+    color: #3D1101;
+    margin-bottom: 6px;
+}
+.radio-block label[for="yes"]{
+    margin: 0 6.5% 0 0;
+}
+.radio-block label{
+    position: relative;
+}
+.radio-block label input{
+    margin: 0;
+}
+.radio-block label input,
+.radio-block label{
+    cursor: pointer;
+}
+.radio-block label,
+.radio-block input,
+.radio-block span{
+    display: inline-block;
+    vertical-align: top;
+}
+.radio-block input[type='radio'],.radio-block input[type="checkbox"]{
+    display:none; 
+}
+.radio-block label:before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 99em;
+    border: 1px solid #3797fc;
+}
+.radio-block input[type='radio']:checked + label:before{
+    content: "";
+    padding: 5px;
+    text-align: center;
+    line-height: 19px;
+}
+.radio-block input[type='radio']:checked + label[for="no"]:after,
+.radio-block input[type='radio']:checked + label[for="yes"]:after{
+    content: "";
+    background: #3797fc;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 99em;
+    text-align: center;
+    line-height: 19px;
+    top: 3px;
+}
+.radio-block input[type='radio']:checked + label[for="yes"]:after{
+    left: 3px;
+}
+.radio-block input[type='radio']:checked + label[for="no"]:after{
+    right: 3px;
+}
+
+footer{
+    width: 100%;
+    padding: 50px 0;
+    background: #efe9e7;
+}
+#contact-us ul li,
+#contact-us div,
+#about-us p,
+#about-us div{
+    color: #3D1101;
+}
+#contact-us div,
+#about-us div{
+    font-size: 24px;
+}
+#about-us p{
+    font-size: 16px;
+    width: 93%;
+}
+#footer-id{
+    font-size: 49px;
+    color: #3D1101;
+    letter-spacing: 0px;
+    text-align: right;
+}
+#footer-id li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+#footer-id li i{
+    width: 31px;
+    height: 36px;
+}
+
+/*
+
+*/
 @media (min-width: 768px){
     .navbar-nav {
         float: right;
