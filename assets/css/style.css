@@ -282,28 +282,28 @@ footer{
 }
 
 /*-------------------------
-    login
+    login & Register
 -------------------------*/
-#login{
+.templet-style{
     padding-top: 50px;
     background: #EFE9E7;
 }
-#login .login-top-title{
+.templet-style-top-title{
     margin: 0 0 35px;
 }
-#login .login-top-title h1,
-#login .login-top-title h4{
+.templet-style-top-title h1,
+.templet-style-top-title h4{
     color: #3D1101;
     text-align: center;
     font-weight: bold;
 }
-#login .login-top-title h1{
+.templet-style-top-title h1{
     font-size: 48px;
 }
-#login .login-top-title h4{
+.templet-style-top-title h4{
     font-size: 20px;
 }
-.login-block{
+.templet-block{
     width: 300px;
     height: auto;
     margin: 0 auto 50px;
@@ -312,7 +312,7 @@ footer{
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
     border-top: 3px solid #FF5E45;
 }
-.login-block .login-title{
+.templet-block .templet-title{
     width: 100%;
     font-size: 18px;
     color: #3D1101;
@@ -320,17 +320,21 @@ footer{
     font-weight: bolder;
     margin: 0 0 16px;
 }
-.lodin-block-style{
+
+/*-------------------------
+    login
+-------------------------*/
+.login-block-style{
     margin-bottom: 15px;
 }
-.lodin-block-style p{
+.login-block-style p{
     font-size: 16px;
     color: #3D1101;
 }
-.lodin-block-style label{
+.login-block-style label{
     position: relative;
 }
-.lodin-block-style input{
+.login-block-style input{
     width: 270px;
     height: 32px;
     padding: 10px 0 10px 25px;
@@ -365,7 +369,6 @@ footer{
 .login-btn input:last-child{
     margin: 0;
 }
-
 .login-btn .signBtn {
     background: rgba(0,0,0,0.35);
 }
@@ -373,7 +376,32 @@ footer{
     background: #F56C23;
 }
 
+/*-------------------------
+    register
+-------------------------*/
 
+#register .templet-block{
+    width: 620px;
+    height: auto;
+    margin: 0 auto 50px;
+    padding: 15px;
+    background: #EFE9E7;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    border-top: 3px solid #FF5E45;
+}
+.terms-title + div,
+.terms-title{
+    color: #3D1101;
+}
+.terms-title{
+    font-size: 18px;
+}
+.terms-title + div{
+    font-size: 14px;
+}
+#register .loginBtn{
+    float: right;
+}
 
 @media (min-width: 768px){
     .navbar-nav {
