@@ -281,9 +281,100 @@ footer{
     height: 36px;
 }
 
-/*
+/*-------------------------
+    login
+-------------------------*/
+#login{
+    padding-top: 50px;
+    background: #EFE9E7;
+}
+#login .login-top-title{
+    margin: 0 0 35px;
+}
+#login .login-top-title h1,
+#login .login-top-title h4{
+    color: #3D1101;
+    text-align: center;
+    font-weight: bold;
+}
+#login .login-top-title h1{
+    font-size: 48px;
+}
+#login .login-top-title h4{
+    font-size: 20px;
+}
+.login-block{
+    width: 300px;
+    height: auto;
+    margin: 0 auto 50px;
+    padding: 15px;
+    background: #EFE9E7;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    border-top: 3px solid #FF5E45;
+}
+.login-block .login-title{
+    width: 100%;
+    font-size: 18px;
+    color: #3D1101;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0 0 16px;
+}
+.lodin-block-style{
+    margin-bottom: 15px;
+}
+.lodin-block-style p{
+    font-size: 16px;
+    color: #3D1101;
+}
+.lodin-block-style label{
+    position: relative;
+}
+.lodin-block-style input{
+    width: 270px;
+    height: 32px;
+    padding: 10px 0 10px 25px;
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+}
+.password-icon,
+.email-icon{
+    position: absolute;
+    top: 28%;
+    left: 3%;
+    color: rgba(61,17,0,0.50);
+}
+.forget{
+    font-size: 14px;
+    color: #FF5E45;
+    margin-bottom: 36px;
+}
+.login-btn{
+    width: 100%;
+    margin: 0 auto;
+}
+.login-btn input{
+    width: 48%;
+    padding: 6px 0;
+    text-align: center;
+    margin-right: 1%;
+    color: #fff;
+    border-radius: 3px;
+}
+.login-btn input:last-child{
+    margin: 0;
+}
 
-*/
+.login-btn .signBtn {
+    background: rgba(0,0,0,0.35);
+}
+.login-btn .loginBtn {
+    background: #F56C23;
+}
+
+
+
 @media (min-width: 768px){
     .navbar-nav {
         float: right;
