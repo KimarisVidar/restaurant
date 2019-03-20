@@ -379,7 +379,6 @@ footer{
 /*-------------------------
     register
 -------------------------*/
-
 #register .templet-block{
     width: 620px;
     height: auto;
@@ -401,6 +400,174 @@ footer{
 }
 #register .loginBtn{
     float: right;
+}
+
+/*-------------------------
+    shopping
+-------------------------*/
+.shopping-left .title{
+    margin-bottom: 16px;
+}
+.shopping-left .title i,
+.shopping-left .title p{
+    font-size: 20px;
+    color: #3D1101;
+    line-height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.shopping-left .title i{
+    margin-right: 15px;
+}
+.shopping-left  .list div{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #3D1101;
+    line-height: 32px;
+}
+.shopping-left  .list ul li{
+    width: 100%;
+    padding: 5px 0 5px 10px;
+    border-bottom: 1px solid #3D1101;
+}
+.shopping-left  .list ul li.active{
+    background: #3d1101;
+}
+.shopping-left  .list ul li.active div{
+    color:#fff;
+}
+
+.shopping-right .search{
+    width: 100%;
+    margin: 0 auto 26px;
+}
+
+.shopping-right .search label{
+    float: left;
+    position: relative;
+}
+.shopping-right .search input{
+    width: 460px;
+    height: 32px;
+    border: 2px solid #3D1101;
+    background: transparent;
+    padding: 0 0 0 15px;
+    color: #3D1101;
+}
+.shopping-right .search .search-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    background: #3D1101;
+    color: #fff;
+    width: 6%;
+    height: 95%;
+    line-height: 32px;
+    text-align: center;
+}
+.shopping-right .search .checkout{
+    float: right;
+}
+.shopping-right .search .checkout div,
+.shopping-right .search .checkout i{
+    display: inline-block;
+    vertical-align: middle;
+}
+.shopping-right .search .checkout div{
+    font-size: 16px;
+    color: #3D1101;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #3D1101;
+}
+.shopping-right .search .checkout i{
+    font-size: 30px;
+    color: #3D1101;
+    position: relative;
+}
+.shopping-right .search .checkout i:after{
+    content:'1';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 14px;
+    height: 14px;
+    background: #F56C23;
+    color: #fff;
+    border-radius: 99em;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+.shopping-right .menu-block{
+    margin-bottom: 30px;
+}
+.shopping-right .menu-style{
+    background: #EFE9E7;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    padding: 0 0 10px;
+}
+.shopping-right .menu-style img{
+    width: 100%;
+    margin-bottom: 16px;
+}
+.img-block{
+    position: relative;
+}
+.heart-icon{
+    position: absolute;
+    top: 9%;
+    left: 5%;
+    font-size: 20px;
+    color: #fff;
+}
+.menu-text{
+    text-align: center;
+}
+.tw-name,
+.en-name{
+    color: #3D1101;
+}
+.tw-name{
+    font-size: 20px;
+}
+.en-name{
+    font-size: 12px;
+}
+.menu-text .line{
+    width: 91px;
+    height: 1px;
+    margin: 8px auto 20px;
+    background: #3D1101;
+}
+.price{
+    width: 100%;
+    margin: 0 auto 16px;
+    text-align: center;
+}
+.price i,
+.price span{
+    font-size: 20px;
+}
+.price span{
+    font-weight: bolder;
+}
+
+.add-shopping{
+    width: 90%;
+    height: 28px;
+    margin: 0 auto 10px;
+    border: 2px solid #FF5E45;
+    border-radius: 3px;
+    display: block;
+}
+.add-shopping i,
+.add-shopping div{
+    display: inline-block;
+    vertical-align: middle;
+    color: #FF5E45;
 }
 
 @media (min-width: 768px){
