@@ -14,6 +14,10 @@
 .navbar-default .navbar-nav > li > a{
     font-size: 16px;
 }
+.navbar-nav {
+    float: right;
+    margin: 0;
+}
 #header{
     max-width: 100%;
     width: 100%;
@@ -123,7 +127,7 @@
 #content-block-mid .title{
     font-size: 20px;
     line-height: 32px;
-    margin: 81px 0 0;
+    margin: 5em 0 0;
 }
 #content-block-mid .mid-content,
 #content-block-mid .subtitle{
@@ -244,6 +248,22 @@
 }
 .radio-block input[type='radio']:checked + label[for="no"]:after{
     right: 3px;
+}
+
+.contact-us-block{
+    text-align: right;
+}
+.contact-us-block input{
+    width: 70px;
+    height: 32px;
+    border-radius: 3px;
+    color: #fff;
+}
+.contact-us-block .signBtn {
+    background: rgba(0,0,0,0.35);
+}
+.contact-us-block .loginBtn {
+    background: #F56C23;
 }
 
 footer{
@@ -570,9 +590,48 @@ footer{
     color: #FF5E45;
 }
 
-@media (min-width: 768px){
+/* @media (min-width: 768px){
     .navbar-nav {
         float: right;
         margin: 0;
     }
+} */
+@media (max-width: 1024px){
+    #content-block-mid .title { margin: 2em 0 0; }
+    #content-block-btm .block-btm-content{ margin-left: 27%; }
 }
+@media (max-width: 768px){
+    .caption p { width: 100%; }
+    #content-block-mid .mid-content, 
+    #content-block-mid .subtitle { font-size: 14px; }
+    #content-block-mid .mid-content { width: 96%; margin-top: 16px; }
+    #content-block-btm .block-btm-content{ width: 90%; margin-left: 0; }
+    .contact-block,
+    #contact-us,
+    .shopping-right{ margin-top: 5%; }
+}
+
+@media (max-width: 640px){
+    #content-block-mid .mid-content { width: 100%; margin-bottom: 16px; }
+    #content-block-btm .block-btm-content { width: 90%; margin-top: 10px; }
+    #content-block-btm .block-btm-content-name { width: 100%; }
+    #footer-id{ text-align: center; }
+    #register .login-password label{ display: block; }
+    #register .login-email{ margin-top: 5%; }
+    #register .templet-block { width: 90%; }
+    #register .login-block-style label input{ width: 480px; }
+    .shopping-right .search label{
+        float: none;
+        width: 100%;
+    }
+    .shopping-right .search input{
+        width: 100%;
+    }
+    .shopping-right .search .checkout{
+        float: none;
+        text-align: center;
+    }
+}
+
+
+

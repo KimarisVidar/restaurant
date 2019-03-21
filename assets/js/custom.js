@@ -6,4 +6,3 @@ function postPage(){
         // if ($.isFunction(callback)) callback();
     })
 }
-postPage();
