@@ -374,6 +374,8 @@ footer{
     width: 100%;
     margin: 0 auto;
 }
+.login-btn a{ display: inline-block; vertical-align: middle;}
+.login-btn a,
 .login-btn input{
     width: 48%;
     padding: 6px 0;
@@ -382,6 +384,7 @@ footer{
     color: #fff;
     border-radius: 3px;
 }
+.login-btn a:last-child,
 .login-btn input:last-child{
     margin: 0;
 }
@@ -615,7 +618,7 @@ footer{
     #register .login-password label{ display: block; }
     #register .login-email{ margin-top: 5%; }
     #register .templet-block { width: 90%; }
-    #register .login-block-style label input{ width: 480px; }
+    /* #register .login-block-style label input{ width: 480px; } */
     .shopping-right .search label{ float: none; width: 100%; }
     .shopping-right .search input{ width: 100%; }
     .shopping-right .search .checkout{ float: none; text-align: center; }
@@ -623,18 +626,12 @@ footer{
     #nav ul li{ text-align: center; }
 }
 @media (max-width: 480px){
-    .carousel-text-block{
-        width: 80%;
-        height: auto;   
-    }
-    .carousel-text-style-b{
-        font-size: 2em;
-    }
+    .carousel-text-block{ width: 80%; height: auto; }
+    .carousel-text-style-b{ font-size: 2em; }
 }
 @media (max-width: 375px){
-    .carousel-text-block{
-        width: 97%;
-    }
+    .carousel-text-block{ width: 97%; }
+    #content-block-btm .block-btm-content { width: 100%; }
 }
 
 
