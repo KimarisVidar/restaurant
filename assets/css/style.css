@@ -1,6 +1,6 @@
 .navbar{
-    background-color: rgba(0,0,0,0.1);
-    border-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.7);
+    border-color: rgba(0,0,0,0.7);
 }
 .logo{
     font-size: 24px;
@@ -62,29 +62,25 @@
     background: #efe9e7;
 }
 .content-title{
-    max-width: 200px;
-    width: 200px;
-    max-height: 64px;
+    width: 100%;
+    height: auto;
     margin: 0 auto 31px;
     position: relative;
 }
+.content-title::before,
 .content-title::after{
     content:'';
     position: absolute;
-    right: -60%;
-    top: 52%;
+    top: 45%;
     width: 105px;
     height: 1px;
     background: #979797;
 }
+.content-title::after{
+    right: 30%;
+}
 .content-title::before{
-    content:'';
-    position: absolute;
-    left: -60%;
-    top: 52%;
-    width: 105px;
-    height: 1px;
-    background: #979797;
+    left: 30%;
 }
 .content-title p{
     text-align: center;
@@ -620,18 +616,25 @@ footer{
     #register .login-email{ margin-top: 5%; }
     #register .templet-block { width: 90%; }
     #register .login-block-style label input{ width: 480px; }
-    .shopping-right .search label{
-        float: none;
-        width: 100%;
+    .shopping-right .search label{ float: none; width: 100%; }
+    .shopping-right .search input{ width: 100%; }
+    .shopping-right .search .checkout{ float: none; text-align: center; }
+    #nav .navbar-nav{ float: none; }
+    #nav ul li{ text-align: center; }
+}
+@media (max-width: 480px){
+    .carousel-text-block{
+        width: 80%;
+        height: auto;   
     }
-    .shopping-right .search input{
-        width: 100%;
-    }
-    .shopping-right .search .checkout{
-        float: none;
-        text-align: center;
+    .carousel-text-style-b{
+        font-size: 2em;
     }
 }
-
+@media (max-width: 375px){
+    .carousel-text-block{
+        width: 97%;
+    }
+}
 
 
